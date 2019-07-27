@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "970891721652",
+    "firebase_url": "https://veggiefest-2279a.firebaseio.com",
+    "project_id": "veggiefest-2279a",
+    "storage_bucket": "veggiefest-2279a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970891721652:android:473eefca3022c5cf",
+        "android_client_info": {
+          "package_name": "com.shashank.user.veggiefest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "970891721652-2g6bk8mb5i92qlbbv6v57ivub42roh84.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shashank.user.veggiefest",
+            "certificate_hash": "66a7956b5a0159196c56e82fd4ec6528c6984eee"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgnySBUK1Q8CTzdq8RRyaXdnP-8NpjAFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "970891721652-spr3epe0soaago54ijats24mkv0bpl46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".com.fragments.Customer_Profile_Fragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgvw"
+            android:layout_width="185dp"
+            android:layout_height="147dp"
+            android:layout_gravity="center"
+            android:src="@drawable/boyy"
+            android:background="@drawable/img"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="34dp" />
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imgaeButton"
+                android:layout_width="58dp"
+                android:layout_height="37dp"
+                android:src="@drawable/ic_camera_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textViewMobNum"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:text="Customer Mobile Number "
+        android:layout_gravity="center"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="150dp" />
+
+    <TextView
+        android:id="@+id/textViewAltNum"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:text="Customer Alternate Number "
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="236dp"
+        tools:text="Customer Alternate Number" />
+
+    <TextView
+        android:id="@+id/textMap"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="Google Map"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order History"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="342dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_oderHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="468dp" />
+
+    <!--<com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+
+</LinearLayout>

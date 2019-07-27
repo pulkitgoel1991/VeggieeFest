@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/loginfrgment"
+    android:background="@drawable/loginback"
+    android:layout_height="match_parent"
+    tools:context="com.shashank.user.veggiefest.com.fragments.LoginFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lavelLoginTextView"
+        android:textSize="25sp"
+        android:textAllCaps="true"
+        android:fontFamily="monospace"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/editText_Username"
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:padding="8sp"
+            android:hint="@string/userName_editText" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/editText_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/userPassword_editText"
+            android:padding="8sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:inputType="textPassword"
+            android:textSize="18sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/checkBox_saved_user_password"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="@string/checkBox" />
+
+    <Button
+        android:id="@+id/user_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/style_loginbutton"
+        android:text="@string/loginButton"
+        android:layout_gravity="center"
+        android:textSize="17sp"
+        android:textColor="#fffcfc"/>
+    <TextView
+        android:id="@+id/textview_forgetpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:gravity="center"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/arrow"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/textview_newUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:gravity="center"
+       android:padding="10sp"
+        android:drawableLeft="@drawable/arrow"
+        android:textCursorDrawable="@string/checkBox"
+        android:text="@string/newUserTextView"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="@string/textViewLoginWith"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal">
+
+       <!-- <Button
+            android:id="@+id/button_google"
+            android:layout_width="70dp"
+            android:layout_marginRight="30sp"
+            android:layout_height="match_parent"
+            android:background="@drawable/googlepic"
+            />-->
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/sign_out_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Sign Out"/>
+
+       <!-- <Button
+            android:id="@+id/button_facebook"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:background="@drawable/fbook" />-->
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.771" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
